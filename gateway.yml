@@ -10,4 +10,4 @@ spring:
         predicates:
         - Path=/msw/**
         filters:
-        - RewritePath=/msw/(?<segmento>.*), /sgd/$\{segmento}
+        - RewritePath=/msw/(?<segmento>.*), /sgd-api/$\{segmento}
