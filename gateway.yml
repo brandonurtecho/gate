@@ -11,3 +11,9 @@ spring:
         - Path=/msw/**
         filters:
         - RewritePath=/msw/(?<segmento>.*), /sgd-api/$\{segmento}
+      - id: sum-api
+        uri: http://localhost:8082
+        predicates:
+        - Path=/msw/**
+        filters:
+        - RewritePath=/msw/(?<segmento>.*), /sum-api/$\{segmento}
